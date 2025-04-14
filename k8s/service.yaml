@@ -1,0 +1,15 @@
+# https://kubernetes.io/docs/concepts/services-networking/service/
+apiVersion: v1
+kind: Service
+metadata:
+  name: kuber
+  namespace: default
+spec:
+  selector:
+    app: kuber
+  ports:
+  - name: kuber
+    port: 80
+    targetPort: 7000
+   
+---
