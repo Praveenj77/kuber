@@ -9,7 +9,7 @@ spec:
     app: kuber
   ports:
   - name: kuber
-    port: 80
+    port: 5000
     targetPort: 7000
    
 ---
