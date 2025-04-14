@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kuber
+  desc: kuber-app-deployment
+spec:
+  selector:
+    matchLabels:
+      app: kuber
+  template:
+    metadata:
+      labels:
+        app: kuber
+    spec:
+      containers:
+      - name: mykuberapp
+        image: docker.io/praveeenj/kuber:tagname
+        resources:
+          
+        ports:
+        - containerPort: 7000
